@@ -9,7 +9,7 @@ from pysummarization.abstractabledoc.top_n_rank_abstractor import TopNRankAbstra
 # 動画ダウンロード
 ydl_video_opts = {'outtmpl': 'material'}
 with YoutubeDL(ydl_video_opts) as ydl:
-    result = ydl.download(['ダウンロードした動画のURL'])
+    result = ydl.download(['https://www.youtube.com/watch?v=4xAfYBt4314&t=2s'])
 
 # 拡張子変換
 material = ffmpeg.input('material.webm')
